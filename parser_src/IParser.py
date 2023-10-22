@@ -1,6 +1,7 @@
 import abc
 
 
+# simple interface for a parser; feel free to use own language recognition tools in derived classes
 class IParser(abc.ABC):
 
     @abc.abstractmethod
@@ -9,4 +10,4 @@ class IParser(abc.ABC):
 
     @staticmethod
     def print(output):
-        print(str(output) + "\n\n")
+        print(str(output) + "\n")
